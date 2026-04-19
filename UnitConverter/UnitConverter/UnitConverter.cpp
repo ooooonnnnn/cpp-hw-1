@@ -1,3 +1,7 @@
+// Omri Tafla
+
+
+
 #include <iostream>
 #include <string>
 
@@ -5,9 +9,9 @@ using namespace std;
 
 void main()
 {
-    const int num_units = 3;
-    string units[num_units] = {"m", "km", "cm"};
-    float relative_values[num_units] = {1, 1000, 0.01f};
+    const int num_units = 4;
+    string units[num_units] = {"m", "km", "cm", "feet"};
+    float values_in_meters[num_units] = {1, 1000, 0.01f, 0.3048f};
     
     // choose base unit from list
     bool is_valid = false;
@@ -85,11 +89,9 @@ void main()
         }
         
         cout << parsed_number << units[base_unit_ind] << " = " << 
-            parsed_number * relative_values[base_unit_ind] / relative_values[target_unit_ind] << units[target_unit_ind] <<
+            parsed_number * values_in_meters[base_unit_ind] / values_in_meters[target_unit_ind] << units[target_unit_ind] <<
                 "\n";
         
         cout << "Enter a non number to exit\n";
     }
-    
-    //if 
 }
