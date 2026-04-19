@@ -4,26 +4,29 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
+const int num_units = 4;
+string units[num_units] = {"m", "km", "cm", "feet"};
+float values_in_meters[num_units] = {1, 1000, 0.01f, 0.3048f};
+
 void main()
 {
-    const int num_units = 4;
-    string units[num_units] = {"m", "km", "cm", "feet"};
-    float values_in_meters[num_units] = {1, 1000, 0.01f, 0.3048f};
+    cout << "Welcome to the unit converter!\n\n";
     
     // choose base unit from list
     bool is_valid = false;
     int base_unit_ind = -1;
     while(!is_valid)
     {
-        cout << "Enter base unit from: ";
+        cout << "What is your base unit? { ";
         for (auto unit : units)
         {
             cout << unit << " ";
         }
-        cout << "\n";
+        cout << "}\n";
         
         string chosen_unit;
         cin >> chosen_unit;
@@ -44,7 +47,7 @@ void main()
     int target_unit_ind = -1;
     while(!is_valid)
     {
-        cout << "Enter target unit from: ";
+        cout << "What is your target unit? { ";
         string unit;
         for (int i = 0; i < num_units; i++)
         {
@@ -52,7 +55,7 @@ void main()
             unit = units[i];
             cout << unit << " ";
         }
-        cout << "\n";
+        cout << "}\n";
         
         string chosen_unit;
         cin >> chosen_unit;
