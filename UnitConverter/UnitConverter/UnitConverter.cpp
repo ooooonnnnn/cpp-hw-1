@@ -1,7 +1,6 @@
 // Omri Tafla
 
 
-
 #include <iostream>
 #include <string>
 #include <vector>
@@ -35,10 +34,12 @@ void main()
         string number_string;
         cin >> number_string;
 
-        float parsed_number;
+        double parsed_number;
+        double converted_number;
         try
         {
             parsed_number = stof(number_string);
+            converted_number = parsed_number * trans_factor;
         }
         catch (...)
         {
@@ -47,7 +48,7 @@ void main()
         }
         
         cout << parsed_number << " " << base_unit_name << " = " << 
-            parsed_number * trans_factor << " " << target_unit_name <<
+            converted_number << " " << target_unit_name <<
                 "\n";
         
         cout << "Enter a non number to exit\n";
