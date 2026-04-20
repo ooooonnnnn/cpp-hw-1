@@ -1,6 +1,7 @@
 // Omri Tafla
 
 
+#include <iomanip>
 #include <iostream>
 #include <string>
 #include <vector>
@@ -25,6 +26,7 @@ void main()
     string target_unit_name;
     double target_unit_value = input_choose_unit("What is your target unit?", &target_unit_name);
     
+    cout << "\n" << "Converting from " << base_unit_name << " to " << target_unit_name << "\n\n";
     double trans_factor = base_unit_value / target_unit_value;
     
     //enter numbers
@@ -47,9 +49,9 @@ void main()
             return;
         }
         
-        cout << parsed_number << " " << base_unit_name << " = " << 
-            converted_number << " " << target_unit_name <<
-                "\n";
+        cout << fixed << setprecision(2) <<
+            parsed_number << " " << base_unit_name << " = " << 
+            converted_number << " " << target_unit_name << "\n\n";
         
         cout << "Enter a non number to exit\n";
     }
