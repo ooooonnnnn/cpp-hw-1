@@ -4,6 +4,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitConverter", "UnitConver
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PalindromeDetector", "..\PalindromeDetector\PalindromeDetector.vcxproj", "{85185F5A-BA63-4DBD-B420-EE16B15A1F42}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RomanNumeralsTranslator", "..\RomanNumeralsTranslator\RomanNumeralsTranslator.vcxproj", "{CB6358FD-C809-4632-A49E-50851B91A4D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -28,5 +30,13 @@ Global
 		{85185F5A-BA63-4DBD-B420-EE16B15A1F42}.Release|Win32.Build.0 = Release|Win32
 		{85185F5A-BA63-4DBD-B420-EE16B15A1F42}.Release|x64.ActiveCfg = Release|x64
 		{85185F5A-BA63-4DBD-B420-EE16B15A1F42}.Release|x64.Build.0 = Release|x64
+		{CB6358FD-C809-4632-A49E-50851B91A4D0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CB6358FD-C809-4632-A49E-50851B91A4D0}.Debug|Win32.Build.0 = Debug|Win32
+		{CB6358FD-C809-4632-A49E-50851B91A4D0}.Debug|x64.ActiveCfg = Debug|x64
+		{CB6358FD-C809-4632-A49E-50851B91A4D0}.Debug|x64.Build.0 = Debug|x64
+		{CB6358FD-C809-4632-A49E-50851B91A4D0}.Release|Win32.ActiveCfg = Release|Win32
+		{CB6358FD-C809-4632-A49E-50851B91A4D0}.Release|Win32.Build.0 = Release|Win32
+		{CB6358FD-C809-4632-A49E-50851B91A4D0}.Release|x64.ActiveCfg = Release|x64
+		{CB6358FD-C809-4632-A49E-50851B91A4D0}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 EndGlobal
